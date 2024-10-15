@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #aaa;
+}
+
+button.hidden {
+  display: none;
+}
+
+/* General Popup Styles */
+.popup {
+  background-color: #333; /* Default for error messages */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+/* Green Popup for Success Messages */
+.popup.success {
+  background-color: #4caf50; /* Green color for success */
+}
+
+.popup button {
+  background-color: #007bff; /* Button color */
+}
+
+.popup.hidden {
+  display: none;
+}
+
+#error-message {
+  color: red; /* Error message color */
+}
+
+.light-red {
+  background-color: lightcoral; /* Light red color */
+}
+
+.light-green {
+  background-color: lightgreen; /* Light green color */
+}

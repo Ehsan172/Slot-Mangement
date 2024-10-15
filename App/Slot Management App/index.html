@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campaign Booking System</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Campaign Booking System</h1>
+<label for="campaign-name">Campaign Name:</label>
+<input type="text" id="campaign-name" placeholder="Enter campaign name" required>
+
+<label for="package-type">Select Package Type:</label>
+<select id="package-type" required>
+    <option value="" disabled selected>Select Package Type</option>
+    <option value="Standard">Standard</option>
+    <option value="Premium">Premium</option>
+</select>
+
+<label for="start-date">Start Date:</label>
+<input type="date" id="start-date" required>
+
+<label for="package">Package Duration:</label>
+<select id="package" disabled>
+<option value="">Select Package</option>
+<option value="7">7 Days</option>
+<option value="14">14 Days</option>
+<option value="28">28 Days</option>
+</select>
+
+<label for="slots">Select Slots:</label>
+<select id="slots" disabled>
+<option value="">Select Slots</option>
+<option value="2">2 Slots</option>
+<option value="4">4 Slots</option>
+<option value="6">6 Slots</option>
+<option value="8">8 Slots</option>
+<option value="10" class="premium">10 Slots</option>
+</select>
+
+<div id="available-screens-container" class="hidden">
+<label for="available-screens">Select Available Screens:</label>
+<select id="available-screens" required>
+<option value="">Select Screens</option>
+</select>
+</div>
+
+<button id="done-button" class="hidden">Done</button>
+
+<div id="popup" class="popup hidden">
+<p>Campaign created successfully!</p>
+<button id="ok-button">OK</button>
+</div>
+
+<div id="error-message"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
